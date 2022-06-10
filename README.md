@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+No image for any lauches due to spacex api not providing reliable image links
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
