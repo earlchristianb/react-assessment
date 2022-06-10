@@ -4,7 +4,6 @@ import { API } from "./api/axios";
 import Card from "./components/Card/Card";
 import Searchbar from "./components/SearchBar/Searchbar";
 import Spinner from "./components/Spinner/Spinner";
-import axios from "axios";
 
 function App() {
 	const [searchFilter, setSearchFilter] = useState("");

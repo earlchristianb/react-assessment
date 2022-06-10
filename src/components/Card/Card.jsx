@@ -35,9 +35,9 @@ const Card = ({
 	};
 
 	return (
-		<div className='w-full shadow-md  bg-white p-4 rounded space-y-5 mt-3'>
+		<div className='w-full shadow-md  bg-white p-4 rounded space-y-1 mt-3'>
 			<div className='flex space-x-1'>
-				<p className='text-lg font-medium'>{missionName}</p>
+				<p className='text-lg font-bold'>{missionName}</p>
 				<p
 					className={`items-start  text-sm h-5 ${getStatusBackground(
 						status
@@ -45,8 +45,8 @@ const Card = ({
 					{status}
 				</p>
 			</div>
-			<div className='flex space-x-3 divide-x-2 divide- p-1 justify-start items-center'>
-				<p className='capitalize'>{formatDate(date)}</p>
+			<div className='flex space-x-3 divide-x-2 divide- p-1 justify-start items-center text-sm mt-3'>
+				<p className='capitalize text-gray-600'>{formatDate(date)}</p>
 
 				{videoLink && (
 					<a className='text-blue-900 cursor-pointer px-2' href={videoLink}>
@@ -62,7 +62,7 @@ const Card = ({
 			<article
 				className={`${
 					isDetailsOpen ? "block" : "hidden"
-				} grid grid-cols-3 place-items-center`}>
+				} grid grid-cols-3 place-items-center mt-6`}>
 				<div className='rounded-full bg-red-400 h-20 w-20'></div>
 				{details !== null ? (
 					<div className='col-span-2 p-2'>{details}</div>
